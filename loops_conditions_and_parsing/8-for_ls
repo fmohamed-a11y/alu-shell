@@ -1,0 +1,6 @@
+#!/bin/usr/env bash 
+#this script will display files with the part after the first dash for file in *
+for file in *
+do 
+     echo "${file#*-}"
+done
