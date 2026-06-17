@@ -1,7 +1,7 @@
-#!//usr/bin/bash/env bash 
+#!/usr/bin/bash/env bash 
 # This script displays hours and mintes like a clock
-hour-0
-while [$hour -le 12 ]
+hour=0
+while [ $hour -le 12 ]
 do 
     echo "Hour: $hour"
     minute=1
