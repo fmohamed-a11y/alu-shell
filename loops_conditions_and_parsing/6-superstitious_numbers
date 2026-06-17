@@ -1,4 +1,5 @@
 #!/bin/bash
+#this script displys numbersfrom 1-120 with superstitios messages
 i=1
 while [ $i -le 20 ]
 do 
