@@ -2,5 +2,5 @@
 # this script will tell the story of each user in /etc/passwd
 while IFS=: read -r username password userid groupid info homedir shell 
 do 
-	echo "User:$username | UID: $userid | Group: $groupid | Home: $homedir | Shell: $shell | Password: $password | Description: $info"
+	echo "The user $username is part of the $groupid gang, lives in $homedir and rides $shell. $userid's place is protected by the passcode $password, more info about the user here: $info"
 done < /etc/passwd
