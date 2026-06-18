@@ -1,0 +1,6 @@
+#!/usr/bin/env bash 
+# this script will tell the story of each user in /etc/passwd
+while IFS=: read -r username password userid groupid info homedir shell 
+do 
+	echo "User:$username | UID: $userid | Group: $groupid | Home: $homedir | Shell: $shell | Password: $password | Description: $info"
+done < /etc/passwd
